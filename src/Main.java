@@ -50,6 +50,16 @@ public class Main {
         System.out.println("\nDeallocating block 1...");
         allocator.deallocate(1);
         allocator.displayMemoryStatus();
+        
+         // failure or Deallocate a block
+        System.out.println("\nDeallocating block 2...");
+        allocator.deallocate(2);
+        allocator.displayMemoryStatus();
+        
+        // Try allocating in exact size 
+        System.out.println("\nAllocating 300 units...");
+        allocator.allocate(300);
+        allocator.displayMemoryStatus();
        
         
     }
